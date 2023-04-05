@@ -24,15 +24,16 @@ public class Login extends CommonMethods {
     @When("user enters valid email and valid password")
     public void user_enters_valid_email_and_valid_password() {
       WebElement usernameBox= driver.findElement(By.xpath("//input[@id='txtUsername']"));
-      usernameBox.sendKeys(ConfigReader.getPropertyValue("username"));
+      sendText(usernameBox,ConfigReader.getPropertyValue("username"));
+
       WebElement passwordBox=driver.findElement(By.xpath("//input[@id='txtPassword']"));
-      passwordBox.sendKeys(ConfigReader.getPropertyValue("password"));
+      sendText(passwordBox,ConfigReader.getPropertyValue("password"));
 
     }
     @When("click on login button")
     public void click_on_login_button() {
       WebElement loginButton= driver.findElement(By.xpath("//input[@id='btnLogin']"));
-      loginButton.click();
+      doClick(loginButton);
     }
     @Then("user is logged in successfully into the application")
     public void user_is_logged_in_successfully() {

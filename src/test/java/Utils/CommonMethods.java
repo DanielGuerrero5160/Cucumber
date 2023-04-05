@@ -1,6 +1,7 @@
 package Utils;
 
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -34,5 +35,15 @@ ConfigReader.readProperties();
     }
     public static void closeBrowser(){
         driver.close();
+    }
+
+
+    public static void doClick(WebElement element){
+        element.click();
+    }
+
+    public static void sendText(WebElement element,String text){
+        element.clear();
+        element.sendKeys(text);
     }
 }
