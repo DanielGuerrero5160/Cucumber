@@ -30,6 +30,7 @@ public class Login extends CommonMethods {
       sendText(passwordBox,ConfigReader.getPropertyValue("password"));
 
     }
+
     @When("click on login button")
     public void click_on_login_button() {
       WebElement loginButton= driver.findElement(By.xpath("//input[@id='btnLogin']"));
@@ -42,9 +43,17 @@ public class Login extends CommonMethods {
          System.out.println("User is logged in successfully");
      }
     }
-    @Then("Close the browser")
-    public void close_the_browser() {
+   @Then("Close the browser")
+  public void close_the_browser() {
   closeBrowser();
+    }
+    @When("user enters valid {string} and valid {string}")
+    public void user_enters_valid_and_valid(String username, String password) {
+        WebElement usernameBox= driver.findElement(By.xpath("//input[@id='txtUsername']"));
+        sendText(usernameBox,username);
+
+        WebElement passwordBox=driver.findElement(By.xpath("//input[@id='txtPassword']"));
+        sendText(passwordBox,password);
     }
 
 }
