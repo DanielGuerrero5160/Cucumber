@@ -1,7 +1,9 @@
 package StepDefinition;
 
+import Pages.LoginPage;
 import Utils.CommonMethods;
 import Utils.ConfigReader;
+import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -14,6 +16,8 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 
 import java.time.Duration;
+import java.util.List;
+import java.util.Map;
 
 public class Login extends CommonMethods {
 
@@ -54,6 +58,28 @@ public class Login extends CommonMethods {
 
         WebElement passwordBox=driver.findElement(By.xpath("//input[@id='txtPassword']"));
         sendText(passwordBox,password);
+    }
+    @When("user enters username and password and verifies login")
+    public void user_enters_username_and_password_and_verifies_login(DataTable dataTable) {
+        LoginPage login=new LoginPage();
+        List< Map<String,String>> userCredentials=dataTable.asMaps();
+        for(Map<String,String> userCreds:userCredentials){
+
+         String username=userCreds.get("username");
+           String password=userCreds.get("password");
+
+           sendText(login.usernameBox,username);
+
+            sendText(login.passwordBox,password);
+
+            doClick(login.loginButton);
+
+
+            doClick(login.welcomeIcon);
+
+            doClick(login.logoutLink);
+        }
+
     }
 
 }
