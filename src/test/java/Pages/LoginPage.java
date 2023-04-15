@@ -9,7 +9,7 @@ import org.openqa.selenium.support.PageFactory;
 public class LoginPage extends CommonMethods {
     @FindBy(xpath = "//input[@id='txtUsername']")
    public WebElement usernameBox;
-@FindBy(xpath = "//input[@id='btnLogin']")
+@FindBy(xpath = "//input[@id='txtPassword']")
    public WebElement passwordBox;
 @FindBy(xpath = "//input[@id='btnLogin']")
    public WebElement loginButton;
@@ -25,3 +25,4 @@ public LoginPage(){
 
     //page factory model
 }
+

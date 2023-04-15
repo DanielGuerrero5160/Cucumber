@@ -5,7 +5,7 @@ Feature: Searching the employee
     And click on login button
     When user clicks on PIM option
 
-  @smoke1
+  @smoke1 @empsearch
   Scenario: Search Employee by ID
     #Given open the browser and launch HRMS application
     #When user enters valid email and valid password
@@ -16,7 +16,7 @@ Feature: Searching the employee
     And user sees employee information displayed
    # And Close the browser
 
-    @smoke1
+    @smoke1 @empsearch
     Scenario: Search Employee by job title
     #  Given open the browser and launch HRMS application
      # When user enters valid email and valid password
