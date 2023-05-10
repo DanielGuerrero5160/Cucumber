@@ -41,6 +41,7 @@ public class Login extends CommonMethods {
     public void click_on_login_button() {
      //WebElement loginButton= driver.findElement(By.xpath("//input[@id='btnLogin']"));
       doClick(login.loginButton);
+
     }
     @Then("user is logged in successfully into the application")
     public void user_is_logged_in_successfully() {

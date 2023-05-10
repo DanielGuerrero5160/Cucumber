@@ -2,6 +2,7 @@ package Utils;
 
 import StepDefinition.PageInitializer;
 import org.apache.commons.io.FileUtils;
+import org.apache.log4j.xml.DOMConfigurator;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -45,9 +46,17 @@ ConfigReader.readProperties();
 //this will initialize all the pages we have in our page
         //page initializer class along with the launch of the application
         initializePageObjects();
+        // to configure the log File and pattern it has
+        DOMConfigurator.configure("log4j.xml");
+        Log.startTestCase("This is the beginning of the test case");
+        Log.info("The test case is executing right now");
+        Log.warning("The test case might have some trivial issues");
     }
     public static void closeBrowser(){
+        Log.info("This test case is about to get completed");
+        Log.endTestCase("This test case is finished");
         driver.close();
+
     }
 
 
@@ -91,9 +100,9 @@ ConfigReader.readProperties();
         //this captures the screenshot and stores it as an array of Bytes
        byte[] picBytes= ts.getScreenshotAs(OutputType.BYTES);//screenshots are stored in array of bytes
         //this captures the screenshot and stores them as a file in the sourceFile variable
-       File sourcePAth=ts.getScreenshotAs(OutputType.FILE);
+       File sourcePath=ts.getScreenshotAs(OutputType.FILE);
         try {
-            FileUtils.copyFile(sourcePAth,new File(Constants.SCREENSHOT_FILEPATH+imageName+getTimeStamp("yyyy-MM-dd-HH-mm-ss")+".png"));
+            FileUtils.copyFile(sourcePath,new File(Constants.SCREENSHOT_FILEPATH+imageName+getTimeStamp("yyyy-MM-dd-HH-mm-ss")+".png"));
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
