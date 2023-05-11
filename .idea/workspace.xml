@@ -5,36 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9d2ada67-7e91-4b3f-a27c-dde6e29b4ebf" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/log4j.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/DBTest/DataBaseTestTwo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/DBTest/DatabaseTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Utils/Log.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/DBTest/DatabaseTestThree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Utils/DBUtility.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenshots/failed/Adding a new employee2023-04-15-14-13-48.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenshots/failed/Adding a new employee2023-04-15-14-33-03.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenshots/failed/Adding a new employee2023-04-15-14-36-30.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenshots/failed/Search Employee by ID2023-04-15-14-13-51.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenshots/failed/Search Employee by job title2023-04-15-14-13-53.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenshots/failed/Valid Admin Login2023-04-15-14-13-56.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenshots/passed/Adding a new employee2023-04-15-14-37-39.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenshots/passed/Adding a new employee2023-04-15-14-50-20.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenshots/passed/Search Employee by ID2023-04-15-12-21-20.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenshots/passed/Search Employee by ID2023-04-15-13-04-27.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenshots/passed/Search Employee by ID2023-04-15-13-49-01.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenshots/passed/Search Employee by ID2023-04-15-14-34-03.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenshots/passed/Search Employee by ID2023-04-15-14-50-29.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenshots/passed/Search Employee by job title2023-04-15-12-21-51.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenshots/passed/Search Employee by job title2023-04-15-13-04-47.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenshots/passed/Search Employee by job title2023-04-15-13-49-38.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenshots/passed/Search Employee by job title2023-04-15-14-34-30.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenshots/passed/Search Employee by job title2023-04-15-14-50-41.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenshots/passed/Valid Admin Login2023-04-15-14-34-35.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenshots/passed/Valid Admin Login2023-04-15-14-50-45.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenshots/passed/Valid Admin Login2023-04-15-15-08-59.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/StepDefinition/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StepDefinition/Login.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/TestRunner/SmokeRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestRunner/SmokeRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Utils/CommonMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Utils/CommonMethods.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/Config/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/Config/config.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,7 +59,7 @@
       <recent name="$PROJECT_DIR$/target" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.DataBaseTestTwo">
+  <component name="RunManager" selected="Application.DatabaseTestThree">
     <configuration name="DataBaseTestTwo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="DBTest.DataBaseTestTwo" />
       <module name="CucumberBatch15" />
@@ -112,17 +86,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FailedRunner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="DatabaseTestThree" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="DBTest.DatabaseTestThree" />
       <module name="CucumberBatch15" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="TestRunner.*" />
+          <option name="PATTERN" value="DBTest.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="TestRunner" />
-      <option name="MAIN_CLASS_NAME" value="TestRunner.FailedRunner" />
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -204,11 +176,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.DatabaseTestThree" />
         <item itemvalue="Application.DataBaseTestTwo" />
         <item itemvalue="Application.DatabaseTest" />
         <item itemvalue="JUnit.SmokeRunner" />
         <item itemvalue="JUnit.SmokeRunner (1)" />
-        <item itemvalue="JUnit.FailedRunner" />
       </list>
     </recent_temporary>
   </component>
