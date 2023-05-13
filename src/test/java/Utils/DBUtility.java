@@ -58,7 +58,7 @@ return rsetMetaData;
                  String value=rset.getString(key);
                  map.put(key, value);
              }
-
+listFromRset.add(map);
          }
      }catch(SQLException e){
          e.printStackTrace();
@@ -110,5 +110,30 @@ public static void closeConnection(Connection conn) {
         }
     }
 }
+
+    public static List<Map<String, String>> getListOfMapsFromRset2(String query) {
+        rsetMetaData = getrSetMetaDa(query);
+        List<Map<String, String>> listFromRset = new ArrayList<>();
+        try {
+            while (rset.next()) {
+                Map<String, String> map = new LinkedHashMap<>();
+                for (int i = 1; i <= rsetMetaData.getColumnCount(); i++) {
+                    //fetching key and value from the columns
+                    String key = rsetMetaData.getColumnName(i);
+                    String value = rset.getString(key);
+                    map.put(key, value);
+                }
+                System.out.println(map);
+                listFromRset.add(map);
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }finally {
+            DBUtility.closeResultSet(rset);
+            DBUtility.closeStatement(statement);
+            DBUtility.closeConnection(conn);
+        }
+        return listFromRset;
+    }
 
 }

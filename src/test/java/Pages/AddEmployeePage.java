@@ -29,4 +29,8 @@ public WebElement lastNameTextBox;
 
 @FindBy (xpath = "//input[@id='btnSave']")
 public WebElement saveBtn;
+
+@FindBy(id = "employeeId")
+public WebElement empIdLocator;
 }
+

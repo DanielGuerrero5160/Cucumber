@@ -5,10 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9d2ada67-7e91-4b3f-a27c-dde6e29b4ebf" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/DBTest/DatabaseTestThree.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Utils/DBUtility.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Utils/GlobalVariables.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logfile.log" beforeDir="false" afterPath="$PROJECT_DIR$/logfile.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/AddEmployeePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Pages/AddEmployeePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/StepDefinition/AddEmployee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StepDefinition/AddEmployee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/StepDefinition/EmployeeSearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StepDefinition/EmployeeSearch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TestRunner/SmokeRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestRunner/SmokeRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Utils/DBUtility.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Utils/DBUtility.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/Config/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/Config/config.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/Features/AddEmployee.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/Features/AddEmployee.feature" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +65,7 @@
       <recent name="$PROJECT_DIR$/target" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.DatabaseTestThree">
+  <component name="RunManager" selected="JUnit.SmokeRunner">
     <configuration name="DataBaseTestTwo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="DBTest.DataBaseTestTwo" />
       <module name="CucumberBatch15" />
@@ -176,10 +182,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SmokeRunner" />
         <item itemvalue="Application.DatabaseTestThree" />
         <item itemvalue="Application.DataBaseTestTwo" />
         <item itemvalue="Application.DatabaseTest" />
-        <item itemvalue="JUnit.SmokeRunner" />
         <item itemvalue="JUnit.SmokeRunner (1)" />
       </list>
     </recent_temporary>
@@ -200,7 +206,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/test/java/StepDefinition/AddEmployee.java</url>
-          <line>23</line>
+          <line>27</line>
           <properties class="StepDefinition.AddEmployee" method="user_enters_first_name_and_middle_name_and_lastname">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
