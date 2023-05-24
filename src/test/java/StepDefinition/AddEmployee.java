@@ -58,6 +58,7 @@ doClick(addEmployeePage.saveBtn);
     public void query_the_information_in_backend() {
         String query = "select * from hs_hr_employees where employee_id='"
                 + GlobalVariables.emp_id+"'";
+        //GlobalVariables.emp_id
         //to store the table coming from db, we used global variable here
         //in this variable we got all the keys and values for the employee we searched
         GlobalVariables.tabledata = DBUtility.getListOfMapsFromRset(query);

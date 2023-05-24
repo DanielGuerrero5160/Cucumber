@@ -62,6 +62,7 @@ listFromRset.add(map);
          }
      }catch(SQLException e){
          e.printStackTrace();
+
        }finally {
          DBUtility.closeResultSet(rset);
          DBUtility.closeStatement(statement);

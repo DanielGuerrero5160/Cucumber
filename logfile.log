@@ -283,3 +283,30 @@
 2023-05-13 13:04:01 INFO  Log:19 - #########################
 2023-05-13 13:04:01 INFO  Log:20 - #########################
 2023-05-13 13:04:01 INFO  Log:21 - ############This test case is finished#############
+2023-05-14 22:47:26 INFO  Log:14 - ***********************
+2023-05-14 22:47:26 INFO  Log:15 - ***********************
+2023-05-14 22:47:26 INFO  Log:16 - *******This is the beginning of the test case********
+2023-05-14 22:47:26 INFO  Log:24 - The test case is executing right now
+2023-05-14 22:47:26 INFO  Log:28 - The test case might have some trivial issues
+2023-05-14 22:47:33 INFO  Log:24 - This test case is about to get completed
+2023-05-14 22:47:33 INFO  Log:19 - #########################
+2023-05-14 22:47:33 INFO  Log:20 - #########################
+2023-05-14 22:47:33 INFO  Log:21 - ############This test case is finished#############
+2023-05-14 22:48:34 INFO  Log:14 - ***********************
+2023-05-14 22:48:34 INFO  Log:15 - ***********************
+2023-05-14 22:48:34 INFO  Log:16 - *******This is the beginning of the test case********
+2023-05-14 22:48:34 INFO  Log:24 - The test case is executing right now
+2023-05-14 22:48:34 INFO  Log:28 - The test case might have some trivial issues
+2023-05-14 22:48:40 INFO  Log:24 - This test case is about to get completed
+2023-05-14 22:48:40 INFO  Log:19 - #########################
+2023-05-14 22:48:40 INFO  Log:20 - #########################
+2023-05-14 22:48:40 INFO  Log:21 - ############This test case is finished#############
+2023-05-14 22:49:30 INFO  Log:14 - ***********************
+2023-05-14 22:49:30 INFO  Log:15 - ***********************
+2023-05-14 22:49:30 INFO  Log:16 - *******This is the beginning of the test case********
+2023-05-14 22:49:30 INFO  Log:24 - The test case is executing right now
+2023-05-14 22:49:30 INFO  Log:28 - The test case might have some trivial issues
+2023-05-14 22:49:36 INFO  Log:24 - This test case is about to get completed
+2023-05-14 22:49:36 INFO  Log:19 - #########################
+2023-05-14 22:49:36 INFO  Log:20 - #########################
+2023-05-14 22:49:36 INFO  Log:21 - ############This test case is finished#############
