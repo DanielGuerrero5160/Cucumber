@@ -8,7 +8,7 @@ import org.junit.runner.RunWith;
 @CucumberOptions(features = "src/test/resources/Features",
         glue = "StepDefinition",
         dryRun = false,
-       tags ="@database",
+      // tags ="@",
 plugin = {"pretty","html:target/Cucumber.html","json:target/Cucumber.json", "rerun:target/failed.txt"})//this will generate an html report and save it to target file
 //then the /cucumber.html is the name of the report dot file type
 public class SmokeRunner {

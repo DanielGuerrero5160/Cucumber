@@ -5,12 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9d2ada67-7e91-4b3f-a27c-dde6e29b4ebf" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/API/HardCodedExamples.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/APIStepDefinitions/APIWorkflowSteps.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/APIStepDefinitions/GenerateTokenSteps.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/TestRunner/APIRunner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/Features/APIWorkflow.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logfile.log" beforeDir="false" afterPath="$PROJECT_DIR$/logfile.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/StepDefinition/AddEmployee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StepDefinition/AddEmployee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Utils/DBUtility.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Utils/DBUtility.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/API/HardCodedExamples.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/API/HardCodedExamples.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TestRunner/SmokeRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestRunner/SmokeRunner.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,42 +62,49 @@
       <recent name="$PROJECT_DIR$/target" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.HardCodedExamples.createEmployee">
-    <configuration name="DataBaseTestTwo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="DBTest.DataBaseTestTwo" />
+  <component name="RunManager" selected="JUnit.APIRunner">
+    <configuration name="APIRunner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CucumberBatch15" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="DBTest.*" />
+          <option name="PATTERN" value="TestRunner.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="TestRunner" />
+      <option name="MAIN_CLASS_NAME" value="TestRunner.APIRunner" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DatabaseTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="DBTest.DatabaseTest" />
+    <configuration name="HardCodedExamples" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CucumberBatch15" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="DBTest.*" />
+          <option name="PATTERN" value="API.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="API" />
+      <option name="MAIN_CLASS_NAME" value="API.HardCodedExamples" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DatabaseTestThree" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="DBTest.DatabaseTestThree" />
+    <configuration name="HardCodedExamples.bgetCreatedEmployee" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CucumberBatch15" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="DBTest.*" />
+          <option name="PATTERN" value="API.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="API" />
+      <option name="MAIN_CLASS_NAME" value="API.HardCodedExamples" />
+      <option name="METHOD_NAME" value="bgetCreatedEmployee" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -179,11 +187,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.HardCodedExamples.createEmployee" />
+        <item itemvalue="JUnit.APIRunner" />
         <item itemvalue="JUnit.SmokeRunner" />
-        <item itemvalue="Application.DatabaseTestThree" />
-        <item itemvalue="Application.DataBaseTestTwo" />
-        <item itemvalue="Application.DatabaseTest" />
+        <item itemvalue="JUnit.HardCodedExamples" />
+        <item itemvalue="JUnit.HardCodedExamples.bgetCreatedEmployee" />
+        <item itemvalue="JUnit.HardCodedExamples.createEmployee" />
       </list>
     </recent_temporary>
   </component>
