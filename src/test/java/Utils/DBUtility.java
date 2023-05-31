@@ -12,7 +12,7 @@ public class DBUtility {
 
     static Connection conn=null;
     static Statement statement=null;
-    private static ResultSet rset;
+    private static ResultSet rset=null;
     private static ResultSetMetaData rsetMetaData;
 
     //this method wiol create the connection to the DB, will execute query and return

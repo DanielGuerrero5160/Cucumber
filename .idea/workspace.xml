@@ -4,20 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9d2ada67-7e91-4b3f-a27c-dde6e29b4ebf" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/Utils/APIConstants.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Utils/APIPayloadConstants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logfile.log" beforeDir="false" afterPath="$PROJECT_DIR$/logfile.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/API/HardCodedExamples.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/API/HardCodedExamples.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/APIStepDefinitions/APIWorkflowSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/APIStepDefinitions/APIWorkflowSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/TestRunner/APIRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestRunner/APIRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/TestRunner/SmokeRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestRunner/SmokeRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Utils/CommonMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Utils/CommonMethods.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/Config/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/Config/config.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/Features/APIWorkflow.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/Features/APIWorkflow.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/Features/Login.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/Features/Login.feature" afterDir="false" />
+    <list default="true" id="9d2ada67-7e91-4b3f-a27c-dde6e29b4ebf" name="Changes" comment="Third commit with headless browser">
+      <change beforePath="$PROJECT_DIR$/src/test/java/Utils/DBUtility.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Utils/DBUtility.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -214,6 +202,21 @@
       <option name="presentableId" value="Default" />
       <updated>1680367321335</updated>
     </task>
+    <task id="LOCAL-00001" summary="Third commit with headless browser">
+      <created>1685497626985</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1685497626985</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Third commit with headless browser">
+      <created>1685497636349</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1685497636349</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -226,6 +229,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Third commit with headless browser" />
+    <option name="LAST_COMMIT_MESSAGE" value="Third commit with headless browser" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
