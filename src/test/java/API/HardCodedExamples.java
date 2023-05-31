@@ -1,12 +1,17 @@
 package API;
 
 import io.restassured.RestAssured;
+import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 import org.junit.Assert;
 import org.junit.FixMethodOrder;
 import org.junit.Test;
+import org.junit.runner.Request;
 import org.junit.runners.MethodSorters;
+
+import java.util.List;
+import java.util.Map;
 
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.*;
@@ -14,7 +19,7 @@ import static org.hamcrest.Matchers.*;
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
 public class HardCodedExamples {
   String baseURI=RestAssured.baseURI="http://hrm.syntaxtechs.net/syntaxapi/api";
-    String token="Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2ODQ5NzEzNDQsImlzcyI6ImxvY2FsaG9zdCIsImV4cCI6MTY4NTAxNDU0NCwidXNlcklkIjoiNTIyMCJ9.4UUrABde1o86OMlij6xJWHjIqYpUAKxerQh6TZas45w";
+  String token="Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2ODUxNTAxMjgsImlzcyI6ImxvY2FsaG9zdCIsImV4cCI6MTY4NTE5MzMyOCwidXNlcklkIjoiNTIyMCJ9.aLFs7QoL3-B5GvXOPNmw2__nkdpqTT-qp4R-n1w93Io";
 
     static String employeeID;
 @Test
@@ -104,6 +109,45 @@ Response response=preparedRequest.when().post("/createEmployee.php");  //we put 
         response.then().assertThat().header("Content-Type",equalTo("application/json"));
 
         response.then().assertThat().body("employee.emp_firstname",equalTo("Danielle"));
+
+
+    }
+    @Test
+    public void getEmployeeStatus(){
+        RequestSpecification preparedRequest=given().header("Content-Type","Application/json").header("Authorization",token);
+
+        Response response=preparedRequest.when().get("/employeementStatus.php");
+        response.prettyPrint();
+
+        JsonPath jsonPath=response.jsonPath();
+
+        List<Map<String, Object>> jsonArray = jsonPath.getList("'Employeement Status'");
+
+        for(Map<String, Object> jsonObject:jsonArray){
+            String idValue=jsonObject.get("id").toString();
+            Assert.assertNotNull(idValue);
+            System.out.println("ID: "+idValue);
+        }
+
+
+    }
+    @Test
+    public void getJobTitles(){
+    RequestSpecification preparedRequest=given().header("Content-Type","application/json").header("Authorization",token);
+
+    Response response=preparedRequest.when().get("/jobTitle.php");
+
+    response.prettyPrint();
+
+    JsonPath jsonPath=response.jsonPath();
+
+    List<Map<String, Object>> jobsMapList=jsonPath.getList("'Jobs'");
+
+    for(Map<String,Object> jobMap:jobsMapList){
+        String job=jobMap.get("job").toString();
+        System.out.println(job);
+        Assert.assertNotNull(job);
+    }
 
 
     }
